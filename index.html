@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Porra Mundial 2026</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="portada">
+    <!-- Sustituye este src por la imagen que quieras usar de portada -->
+    <img src="portada.jpg" alt="Imagen de portada del Mundial 2026">
+  </div>
+
+  <h1 class="titulo">Porra Mundial 2026</h1>
+
+  <form action="https://formspree.io/f/TU_ID_DE_FORMSPREE" method="POST">
+
+    <!-- ============ SECCIÓN 1: PORRA GENERAL ============ -->
+    <div class="seccion">
+      <h2>Porra General del Mundial</h2>
+
+      <div class="campo">
+        <label for="email">Correo electrónico <span class="puntos">(obligatorio)</span></label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <h3>Clasificación final</h3>
+      <div class="fila-doble">
+        <div class="campo">
+          <label for="campeon">Campeón <span class="puntos">(100 pts)</span></label>
+          <select id="campeon" name="campeon" class="selector-seleccion" required></select>
+        </div>
+        <div class="campo">
+          <label for="subcampeon">Subcampeón <span class="puntos">(50 pts)</span></label>
+          <select id="subcampeon" name="subcampeon" class="selector-seleccion" required></select>
+        </div>
+      </div>
+      <div class="fila-doble">
+        <div class="campo">
+          <label for="tercero">Tercer puesto <span class="puntos">(25 pts)</span></label>
+          <select id="tercero" name="tercero" class="selector-seleccion" required></select>
+        </div>
+        <div class="campo">
+          <label for="cuarto">Cuarto puesto <span class="puntos">(25 pts)</span></label>
+          <select id="cuarto" name="cuarto" class="selector-seleccion" required></select>
+        </div>
+      </div>
+
+      <h3>Individuales</h3>
+      <div class="fila-doble">
+        <div class="campo">
+          <label for="goleador">Máximo goleador del Mundial <span class="puntos">(50 pts)</span></label>
+          <input type="text" id="goleador" name="maximo_goleador" placeholder="Nombre del jugador" required>
+        </div>
+        <div class="campo">
+          <label for="asistente">Máximo asistente del Mundial <span class="puntos">(50 pts)</span></label>
+          <input type="text" id="asistente" name="maximo_asistente" placeholder="Nombre del jugador" required>
+        </div>
+      </div>
+      <div class="fila-doble">
+        <div class="campo">
+          <label for="mvp_mundial">MVP del Mundial <span class="puntos">(50 pts)</span></label>
+          <input type="text" id="mvp_mundial" name="mvp_mundial" placeholder="Nombre del jugador" required>
+        </div>
+        <div class="campo">
+          <label for="mvp_final">MVP de la final <span class="puntos">(50 pts)</span></label>
+          <input type="text" id="mvp_final" name="mvp_final" placeholder="Nombre del jugador" required>
+        </div>
+      </div>
+
+      <h3>Estadísticas por selección <span class="puntos">(20 pts cada uno)</span></h3>
+      <div class="fila-doble">
+        <div class="campo">
+          <label for="mas_penaltis">País con más penaltis a favor</label>
+          <select id="mas_penaltis" name="pais_mas_penaltis" class="selector-seleccion" required></select>
+        </div>
+        <div class="campo">
+          <label for="mas_faltas">País con más faltas cometidas</label>
+          <select id="mas_faltas" name="pais_mas_faltas" class="selector-seleccion" required></select>
+        </div>
+      </div>
+      <div class="fila-doble">
+        <div class="campo">
+          <label for="mas_tarjetas">País con más tarjetas</label>
+          <select id="mas_tarjetas" name="pais_mas_tarjetas" class="selector-seleccion" required></select>
+        </div>
+        <div class="campo">
+          <label for="mas_expulsados">País con más expulsados</label>
+          <select id="mas_expulsados" name="pais_mas_expulsados" class="selector-seleccion" required></select>
+        </div>
+      </div>
+      <div class="fila-doble">
+        <div class="campo">
+          <label for="mas_goleador">País más goleador</label>
+          <select id="mas_goleador" name="pais_mas_goleador" class="selector-seleccion" required></select>
+        </div>
+        <div class="campo">
+          <label for="mas_goleado">País más goleado</label>
+          <select id="mas_goleado" name="pais_mas_goleado" class="selector-seleccion" required></select>
+        </div>
+      </div>
+      <div class="fila-doble">
+        <div class="campo">
+          <label for="menos_goleador">País menos goleador</label>
+          <select id="menos_goleador" name="pais_menos_goleador" class="selector-seleccion" required></select>
+        </div>
+        <div class="campo">
+          <label for="menos_goleado">País menos goleado</label>
+          <select id="menos_goleado" name="pais_menos_goleado" class="selector-seleccion" required></select>
+        </div>
+      </div>
+      <div class="fila-doble">
+        <div class="campo">
+          <label for="mas_posesion">País con más posesión</label>
+          <select id="mas_posesion" name="pais_mas_posesion" class="selector-seleccion" required></select>
+        </div>
+        <div class="campo">
+          <label for="menos_posesion">País con menos posesión</label>
+          <select id="menos_posesion" name="pais_menos_posesion" class="selector-seleccion" required></select>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ SECCIÓN 2: FASE DE GRUPOS ============ -->
+    <div class="seccion">
+      <h2>Fase de Grupos</h2>
+      <div id="contenedor-partidos">
+        <!-- Generado dinámicamente por script.js -->
+      </div>
+    </div>
+
+    <button type="submit" class="btn-enviar">Enviar Porra</button>
+
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
