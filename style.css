@@ -1,0 +1,221 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #0b6623, #1a8f4c 40%, #f7d046 100%);
+  background-attachment: fixed;
+  color: #222;
+  min-height: 100vh;
+}
+
+.portada {
+  text-align: center;
+  padding: 30px 15px 10px;
+}
+
+.portada img {
+  max-width: 100%;
+  max-height: 280px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+}
+
+h1.titulo {
+  text-align: center;
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 3px 3px 0 #0b6623, 0 0 10px rgba(0,0,0,0.4);
+  margin: 20px 0 30px;
+  letter-spacing: 2px;
+}
+
+form {
+  max-width: 1000px;
+  margin: 0 auto 60px;
+  padding: 0 15px;
+}
+
+.seccion {
+  background: rgba(255,255,255,0.95);
+  border-radius: 18px;
+  padding: 25px 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+.seccion h2 {
+  margin-top: 0;
+  color: #0b6623;
+  border-bottom: 3px solid #f7d046;
+  padding-bottom: 10px;
+  font-size: 1.8rem;
+}
+
+.seccion h3 {
+  color: #1a8f4c;
+  margin-top: 25px;
+  font-size: 1.3rem;
+  border-left: 5px solid #f7d046;
+  padding-left: 10px;
+}
+
+.seccion h4 {
+  color: #555;
+  margin: 15px 0 8px;
+  font-size: 1.05rem;
+}
+
+.campo {
+  margin-bottom: 18px;
+}
+
+.campo label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #0b6623;
+}
+
+.campo .puntos {
+  font-weight: normal;
+  color: #c69500;
+  font-size: 0.9rem;
+}
+
+.campo input[type="text"],
+.campo input[type="email"],
+.campo select {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #d9d9d9;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #fafafa;
+  transition: border-color 0.2s;
+}
+
+.campo input:focus,
+.campo select:focus {
+  border-color: #1a8f4c;
+  outline: none;
+  background: #fff;
+}
+
+.fila-doble {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.fila-doble .campo {
+  flex: 1 1 220px;
+}
+
+/* Partidos */
+.partido {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  background: #f4f9f4;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+
+.equipo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  min-width: 90px;
+}
+
+.equipo img {
+  width: 56px;
+  height: 40px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.equipo span {
+  font-weight: bold;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.vs {
+  font-weight: bold;
+  color: #aaa;
+  font-size: 1.1rem;
+}
+
+.partido-controles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  flex: 1 1 200px;
+}
+
+.resultado-opciones {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.resultado-opciones label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 5px 12px;
+}
+
+.goles {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.goles input {
+  width: 50px;
+  text-align: center;
+  padding: 6px;
+  border: 2px solid #d9d9d9;
+  border-radius: 6px;
+}
+
+.btn-enviar {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 30px auto;
+  padding: 16px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(135deg, #0b6623, #1a8f4c);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  transition: transform 0.15s;
+}
+
+.btn-enviar:hover {
+  transform: scale(1.03);
+}
