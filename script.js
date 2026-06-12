@@ -1,76 +1,76 @@
 // ----------- DATOS DE SELECCIONES -----------
 const grupos = {
   "A": [
-    { nombre: "México", iso: "mx" },
-    { nombre: "Sudáfrica", iso: "za" },
-    { nombre: "Corea del Sur", iso: "kr" },
-    { nombre: "República Checa", iso: "cz" }
+    { nombre: "México", codigo: "MEX", iso: "mx" },
+    { nombre: "Sudáfrica", codigo: "RSA", iso: "za" },
+    { nombre: "Corea del Sur", codigo: "KOR", iso: "kr" },
+    { nombre: "República Checa", codigo: "CZE", iso: "cz" }
   ],
   "B": [
-    { nombre: "Canadá", iso: "ca" },
-    { nombre: "Bosnia y Herzegovina", iso: "ba" },
-    { nombre: "Qatar", iso: "qa" },
-    { nombre: "Suiza", iso: "ch" }
+    { nombre: "Canadá", codigo: "CAN", iso: "ca" },
+    { nombre: "Bosnia y Herzegovina", codigo: "BIH", iso: "ba" },
+    { nombre: "Qatar", codigo: "QAT", iso: "qa" },
+    { nombre: "Suiza", codigo: "SUI", iso: "ch" }
   ],
   "C": [
-    { nombre: "Brasil", iso: "br" },
-    { nombre: "Marruecos", iso: "ma" },
-    { nombre: "Haití", iso: "ht" },
-    { nombre: "Escocia", iso: "gb-sct" }
+    { nombre: "Brasil", codigo: "BRA", iso: "br" },
+    { nombre: "Marruecos", codigo: "MAR", iso: "ma" },
+    { nombre: "Haití", codigo: "HAI", iso: "ht" },
+    { nombre: "Escocia", codigo: "SCO", iso: "gb-sct" }
   ],
   "D": [
-    { nombre: "Estados Unidos", iso: "us" },
-    { nombre: "Paraguay", iso: "py" },
-    { nombre: "Australia", iso: "au" },
-    { nombre: "Turquía", iso: "tr" }
+    { nombre: "Estados Unidos", codigo: "USA", iso: "us" },
+    { nombre: "Paraguay", codigo: "PAR", iso: "py" },
+    { nombre: "Australia", codigo: "AUS", iso: "au" },
+    { nombre: "Turquía", codigo: "TUR", iso: "tr" }
   ],
   "E": [
-    { nombre: "Alemania", iso: "de" },
-    { nombre: "Curaçao", iso: "cw" },
-    { nombre: "Costa de Marfil", iso: "ci" },
-    { nombre: "Ecuador", iso: "ec" }
+    { nombre: "Alemania", codigo: "GER", iso: "de" },
+    { nombre: "Curaçao", codigo: "CUW", iso: "cw" },
+    { nombre: "Costa de Marfil", codigo: "CIV", iso: "ci" },
+    { nombre: "Ecuador", codigo: "ECU", iso: "ec" }
   ],
   "F": [
-    { nombre: "Holanda", iso: "nl" },
-    { nombre: "Japón", iso: "jp" },
-    { nombre: "Suecia", iso: "se" },
-    { nombre: "Túnez", iso: "tn" }
+    { nombre: "Holanda", codigo: "NED", iso: "nl" },
+    { nombre: "Japón", codigo: "JAP", iso: "jp" },
+    { nombre: "Suecia", codigo: "SWE", iso: "se" },
+    { nombre: "Túnez", codigo: "TUN", iso: "tn" }
   ],
   "G": [
-    { nombre: "Bélgica", iso: "be" },
-    { nombre: "Egipto", iso: "eg" },
-    { nombre: "Irán", iso: "ir" },
-    { nombre: "Nueva Zelanda", iso: "nz" }
+    { nombre: "Bélgica", codigo: "BEL", iso: "be" },
+    { nombre: "Egipto", codigo: "EGY", iso: "eg" },
+    { nombre: "Irán", codigo: "IRN", iso: "ir" },
+    { nombre: "Nueva Zelanda", codigo: "NZL", iso: "nz" }
   ],
   "H": [
-    { nombre: "España", iso: "es" },
-    { nombre: "Cabo Verde", iso: "cv" },
-    { nombre: "Arabia Saudí", iso: "sa" },
-    { nombre: "Uruguay", iso: "uy" }
+    { nombre: "España", codigo: "ESP", iso: "es" },
+    { nombre: "Cabo Verde", codigo: "CPV", iso: "cv" },
+    { nombre: "Arabia Saudí", codigo: "KSA", iso: "sa" },
+    { nombre: "Uruguay", codigo: "URU", iso: "uy" }
   ],
   "I": [
-    { nombre: "Francia", iso: "fr" },
-    { nombre: "Senegal", iso: "sn" },
-    { nombre: "Irak", iso: "iq" },
-    { nombre: "Noruega", iso: "no" }
+    { nombre: "Francia", codigo: "FRA", iso: "fr" },
+    { nombre: "Senegal", codigo: "SEN", iso: "sn" },
+    { nombre: "Irak", codigo: "IRQ", iso: "iq" },
+    { nombre: "Noruega", codigo: "NOR", iso: "no" }
   ],
   "J": [
-    { nombre: "Argentina", iso: "ar" },
-    { nombre: "Argelia", iso: "dz" },
-    { nombre: "Austria", iso: "at" },
-    { nombre: "Jordania", iso: "jo" }
+    { nombre: "Argentina", codigo: "ARG", iso: "ar" },
+    { nombre: "Argelia", codigo: "ALG", iso: "dz" },
+    { nombre: "Austria", codigo: "AUT", iso: "at" },
+    { nombre: "Jordania", codigo: "JOR", iso: "jo" }
   ],
   "K": [
-    { nombre: "Portugal", iso: "pt" },
-    { nombre: "República Democrática del Congo", iso: "cd" },
-    { nombre: "Uzbekistán", iso: "uz" },
-    { nombre: "Colombia", iso: "co" }
+    { nombre: "Portugal", codigo: "POR", iso: "pt" },
+    { nombre: "Rep. Dem. del Congo", codigo: "COD", iso: "cd" },
+    { nombre: "Uzbekistán", codigo: "UZB", iso: "uz" },
+    { nombre: "Colombia", codigo: "COL", iso: "co" }
   ],
   "L": [
-    { nombre: "Inglaterra", iso: "gb-eng" },
-    { nombre: "Croacia", iso: "hr" },
-    { nombre: "Ghana", iso: "gh" },
-    { nombre: "Panamá", iso: "pa" }
+    { nombre: "Inglaterra", codigo: "ENG", iso: "gb-eng" },
+    { nombre: "Croacia", codigo: "CRO", iso: "hr" },
+    { nombre: "Ghana", codigo: "GHA", iso: "gh" },
+    { nombre: "Panamá", codigo: "PAN", iso: "pa" }
   ]
 };
 
@@ -128,8 +128,8 @@ function generarPartidos() {
         html += `
         <div class="partido">
           <div class="equipo">
-            <img src="${bandera(equipo1.iso)}" alt="${equipo1.nombre}">
-            <span>${equipo1.nombre}</span>
+            <img src="${bandera(equipo1.iso)}" alt="${equipo1.nombre}" title="${equipo1.nombre}">
+            <span>${equipo1.codigo}</span>
           </div>
 
           <div class="partido-controles">
@@ -145,9 +145,9 @@ function generarPartidos() {
             </div>
           </div>
 
-          <div class="equipo">
-            <img src="${bandera(equipo2.iso)}" alt="${equipo2.nombre}">
-            <span>${equipo2.nombre}</span>
+          <div class="equipo equipo-derecha">
+            <img src="${bandera(equipo2.iso)}" alt="${equipo2.nombre}" title="${equipo2.nombre}">
+            <span>${equipo2.codigo}</span>
           </div>
         </div>`;
       });
